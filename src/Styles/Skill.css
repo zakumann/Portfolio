@@ -1,0 +1,146 @@
+#skill {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.skill-continer{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.skill-section_title h1 {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fd6e0a;
+}
+
+.skill-section_title h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: #15295f;
+}
+
+.skill-section_title.center {
+    text-align: center;
+}
+
+.skill-section {
+    padding: 65px 0 100px;
+    position: relative;
+}
+
+.skill-section .skill-skill-items {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skill-item {
+    max-width: auto;
+    margin: 0 150px 75px;
+}
+
+.skill-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.skill-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #15295f;
+    -webkit-animation: showText 0.5s 1s linear forwards;
+    animation: sho0wText 0.5s 1s linear forwards;
+}
+
+.skill-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: #cdcdcd;
+    border-radius: 50px;
+    position: relative;
+}
+
+.skill-line span {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #fd6d0a;
+    transition: 1s all;
+}
+
+.skill-line span.animate {
+    -webkit-animation: animate 1.5s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 1.5s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+@media (min-width: 768px){
+    .skill-continer{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px){
+    .skill-continer{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .skill-continer{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px){
+    .skill-continer{
+        max-width: 1350px;
+    }
+}
+
+@-webkit-keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animate {
+    100%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animate{
+    100%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
